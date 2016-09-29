@@ -5,15 +5,6 @@ class RelationshipsController < ApplicationController
 	end
 
 	def create
-		# info = Contact.find(params[:id]).contact_companies.where(id: params[:jobID])
-		# puts '************************'
-		# puts info
-		# puts '************************'
-		# if(info)
-		# 	flash[:createError] = "Company already exists"
-		# else
-			
-		# end
 		create_relationships
 		render_relationships
 	end
